@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useProductStore } from "../store/useProductStore";
+import "../styles/navbar.css";
 
 const Navbar = () => {
     const cartCount = useProductStore((state) => state.cart.length);

@@ -1,3 +1,13 @@
+@import "./styles/global.css";
+@import "./styles/navbar.css";
+@import "./styles/productCard.css";
+@import "./styles/productDetails.css";
+@import "./styles/adminDashboard.css";
+@import "./styles/cart.css";
+@import "./styles/home.css";
+@import "./styles/addProductForm.css";
+@import "./styles/footer.css";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

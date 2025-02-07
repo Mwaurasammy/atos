@@ -1,8 +1,7 @@
-// ProductDetails.tsx
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useProductStore } from "../store/useProductStore";
-import { Product } from "../store/useProductStore";  // Import the Product type
+import "../styles/productDetails.css";
 
 const ProductDetails = () => {
   const { id } = useParams<{ id: string }>(); // Get product ID from URL
@@ -15,14 +14,18 @@ const ProductDetails = () => {
   }
 
   return (
-    <div className="container mx-auto p-4">
-      <img src={product.image} alt={product.title} className="w-1/2 mx-auto" />
-      <h1 className="text-3xl font-bold mt-4">{product.title}</h1>
-      <p className="text-xl mt-2 text-gray-700">${product.price}</p>
-      <p className="mt-4">{product.description}</p>
-      <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded">
-        Add to Cart
-      </button>
+    <div className="product-details-container">
+      <div className="product-details-image-container">
+        <img
+          src={product.image}
+          alt={product.title}
+          className="product-details-image"
+        />
+      </div>
+      <h1 className="product-details-title">{product.title}</h1>
+      <p className="product-details-price">${product.price}</p>
+      <p className="product-details-description">{product.description}</p>
+      <button className="add-to-cart-button">Add to Cart</button>
     </div>
   );
 };

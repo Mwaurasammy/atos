@@ -1,0 +1,44 @@
+/* Netflix-Style Product Card */
+.product-card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    width: 180px; /* Fixed width */
+    height: 260px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover Effect */
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Product Image */
+.product-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover; /* Ensure images are cropped properly */
+    border-radius: 8px 8px 0 0;
+}
+
+/* Product Title */
+.product-card h2 {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 5px 0;
+    white-space: nowrap; /* Prevent long titles from breaking layout */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+}
+
+/* Product Price */
+.product-card p {
+    font-size: 13px;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+}

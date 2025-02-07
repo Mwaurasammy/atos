@@ -1,0 +1,18 @@
+/* Dark Minimalistic Home Page */
+.home-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Dynamic grid layout */
+    gap: 15px; /* Space between items */
+    padding: 20px;
+    justify-content: center; /* Center align */
+}
