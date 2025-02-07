@@ -1,19 +1,48 @@
-# 🛒 E-Commerce Store
+# My Store
 
-An elegant e-commerce store built using **React (Vite) + TypeScript** for the frontend, **Zustand** for state management, and **Tailwind CSS** for styling. This project includes product listings, cart functionality, and an admin dashboard to manage products.
+A minimalistic e-commerce web application with a dark-themed UI, built using React and Zustand for state management.
 
----
+## Features
 
-## 🚀 Features
+- Browse products in a grid layout
+- View detailed product information
+- Add and remove items from the cart
+- Admin panel for managing products
+- Persisted state using Zustand
 
-- 📦 **Product Listing** – Display products in a grid layout.
-- 🛒 **Shopping Cart** – Add and remove products from the cart.
-- 🏪 **Product Details** – View detailed product descriptions.
-- 🔑 **Admin Dashboard** – Add, edit, and delete products.
-- 🎨 **Responsive UI** – Netflix-style product cards for a seamless experience.
+## Project Structure
 
----
+src/
+├── api/                 # API functions
+├── components/          # Reusable UI components
+├── pages/               # Page components
+├── store/               # Zustand state management
+├── styles/              # CSS stylesheets
+├── App.tsx              # Main React component
+├── index.tsx            # Entry point
 
-## 📂 Project Structure
 
-📦 e-commerce-store ├── 📁 src │ ├── 📁 components # Reusable UI components (ProductCard, AddProductForm, etc.) │ ├── 📁 pages # Main pages (Home, Cart, ProductDetails, AdminDashboard) │ ├── 📁 store # Zustand state management │ ├── 📁 styles # Global and component-specific styles │ ├── App.tsx # Root component │ ├── main.tsx # Entry point │ ├── routes.tsx # Application routing │ ├── index.css # Global styles ├── 📜 package.json # Dependencies and scripts ├── 📜 README.md # Documentation
+# Installation
+
+git clone https://github.com/yourusername/my-store.git
+cd my-store
+npm install
+
+# Running the App
+
+npm start
+
+
+# Tech Stack
+
+Frontend: React, TypeScript, Zustand
+Styling: CSS Modules
+Routing: React Router
+
+# Contributing
+
+Fork the repository
+Create a feature branch (git checkout -b feature-branch)
+Commit changes (git commit -m "Add new feature")
+Push to the branch (git push origin feature-branch)
+Open a Pull Request
