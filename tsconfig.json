@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                          // Modern JS target
+    "lib": ["dom", "esnext"],                    // Includes DOM and modern JS features
+    "allowJs": true,                             // Allow JavaScript files in the project
+    "jsx": "react-jsx",                          // Use JSX transformation for React
+    "moduleResolution": "node",                  // Resolve modules like Node.js
+    "esModuleInterop": true,                     // Allow default imports for CommonJS modules
+    "skipLibCheck": true,                        // Skip type checking for declaration files
+    "forceConsistentCasingInFileNames": true,    // Ensure case consistency in imports
+    "strict": true                               // Enable all strict type-checking options
+  },
+  "include": [
+    "src/**/*"                                   // Include all files in the 'src' directory
+  ],
+  "exclude": [
+    "node_modules",                              // Exclude 'node_modules' directory
+    "build",                                     // Exclude build folder if present
+    "dist"                                       // Exclude dist folder if present
+  ]
+}
